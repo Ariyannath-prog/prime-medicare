@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F8E3C3">
+  <meta name="description" content="Primemedicare - Care that puts you first.">
+  <link rel="icon" type="image/png" href="PRIME.png">
+  <title>Primemedicare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Prime Medicare home">
+        <img style="border-radius: 6px;" class="brand-logo" src="PRIME.png" alt="Prime Medicare">
+      </a>
+      <div class="nav-links">
+        <a href="#shop" data-nav-category="Vitamins">Vitamins</a>
+        <a href="#shop" data-nav-category="Personal care">Personal care</a>
+      </div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="Search wellness..." aria-label="Search products">
+      </label>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Your everyday, a little healthier</div>
+        <h1 id="hero-title">Feel good,<br><em>every day.</em></h1>
+        
+        <div class="hero-actions">
+          <a class="primary-button" href="#shop">Explore the shop <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Prime Medicare logo" role="img">
+        <div class="hero-circle"></div>
+        <div class="brand-display">
+          <img src="PRIME.png" alt="">
+        </div>
+        <div class="floating-note">Here for your health<span>Care that puts you first</span></div>
+      </div>
+    </section><br><br><br>
+
+    <section id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Good things for you</p><h2 id="shop-title">Your wellness shelf</h2></div>
+        <a href="#shop" class="text-link" id="showAll">View all products&nbsp; →</a>
+      </div>
+      <div class="category-list" id="categoryList" aria-label="Filter by category"></div>
+      <div class="products" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="promo">
+      <div><p class="section-kicker" style="color:#c3e7c6">A healthier routine starts here</p><h2>Good care, made simple.</h2></div>
+      <a href="#shop" class="primary-button">Find your essentials <span aria-hidden="true">→</span></a>
+    </section>
+    <footer>
+      <a class="brand" href="#" aria-label="Prime Medicare home"><img class="brand-logo" src="PRIME.png" alt="Prime Medicare"></a>
+      <span>Thoughtful care for everyday wellbeing. &nbsp; · &nbsp; © 2026 Goodwell Pharmacy</span>
+    </footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
